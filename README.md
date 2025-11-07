@@ -15,6 +15,9 @@ In this project I will show to my future colleagues Dmitry and Ihor that I've le
 - `Dockerfile` - Configuration of our docker container
 - `reports/` - Generated HTML reports
 
+## Batch run
+- `run.sh` - This will check if docker is installed and started and then will load locust-docker-image and start the test in browser mode
+
 ## Build Docker Image
 ```bash
 docker build -t locust-docker-image . 
