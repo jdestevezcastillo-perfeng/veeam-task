@@ -16,7 +16,8 @@ In this project I will show to my future colleagues Dmitry and Ihor that I've le
 - `reports/` - Generated HTML reports
 
 ## Batch run
-- `run.sh` - This will check if docker is installed and started and then will load locust-docker-image and start the test in browser mode
+- `chmod a+x run.sh` - Before running the batch file we have to make it executable
+- `./run.sh` - This will check if docker is installed and started and then will load locust-docker-image and start the test in browser mode
 
 ## Build Docker Image
 ```bash
