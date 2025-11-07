@@ -20,14 +20,18 @@ In this project I will show to my future colleagues Dmitry and Ihor that I've le
 docker build -t locust-docker-image . 
 ```
 ## Run Tests
-    Browser mode
-    docker run -p 8089:8089 -v $(pwd)/reports:/app/reports locust-docker-image --host=https://jsonplaceholder.typicode.com    
-    Live test dashboard in http://localhost:8089
+Browser mode
+```bash
+docker run -p 8089:8089 -v $(pwd)/reports:/app/reports locust-docker-image --host=https://jsonplaceholder.typicode.com
+```    
+Live test dashboard in http://localhost:8089
 
-    CLI mode
-    docker run -p 8089:8089 -v $(pwd)/reports:/app/reports locust-docker-image \
-        --host=https://jsonplaceholder.typicode.com --headless -u 10 -r 2 -t 30s \
-        --html /app/reports/report.html
+CLI mode
+```bash
+docker run -p 8089:8089 -v $(pwd)/reports:/app/reports locust-docker-image \
+    --host=https://jsonplaceholder.typicode.com --headless -u 10 -r 2 -t 30s \
+    --html /app/reports/report.html
+```
 
 ## Results
 
